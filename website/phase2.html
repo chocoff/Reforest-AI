@@ -33,13 +33,13 @@
 <section class="article-section">
     <div class="article-container">
         <h1 class="article-title">Phase 2: NDVI & CNN </h1>
-        <p class="article-intro">
+        <p class="article-body">
             In Phase 2 of the AI project, the system leverages advanced machine learning techniques to predict deforestation and vegetation changes by incorporating both historical image data and NDVI (Normalized Difference Vegetation Index) analysis. The model uses Convolutional Neural Networks (CNNs) to process pairs of satellite images captured at different times, extracting relevant features and detecting changes in vegetation density. The NDVI, which highlights vegetation health and deforestation through color coding, is integrated into the images as additional channels to enhance model accuracy. By using both historical data and real-time NDVI analysis, the system is capable of making precise predictions about deforestation trends in specific zones, providing valuable insights for monitoring and decision-making in environmental conservation efforts.
         </p>
 
 
         <h3 class="article-subtitle2">Image Prediction</h3>
-        <p class="article-intro">
+        <p class="article-body">
             The image on the left shows the current state of the field, while the image on the right represents the prediction made by the AI. The changes are based on the number of trees present at the time the photo was taken.
         </p>
 
@@ -49,11 +49,11 @@
         </div>
 
         <h3 class="article-subtitle2">NDVI</h3>
-        <p class="article-intro">
+        <p class="article-body">
             The NDVI images represent the difference in vegetation health between the two photos. NDVI, or Normalized Difference Vegetation Index, highlights areas with healthy vegetation in green and areas with less vegetation, such as deforested regions, in red or brown. The NDVI image on the left corresponds to the current state of the field, while the NDVI image on the right shows the predicted changes in vegetation based on AI analysis, where differences indicate areas of deforestation or changes in vegetation density.
         </p>
 
-        <p class="article-intro">
+        <p class="article-body">
             An important observation is that the dataset used to train this model only contained RGB images (with three color channels). In this case, the green channel was repurposed as a placeholder for the infrared (near-infrared) channel. This is important because the NDVI relies on the relationship between the red and near-infrared channels to assess vegetation density in a given area. The NDVI is based on how different surfaces (vegetated and non-vegetated) reflect light, with vegetation strongly reflecting near-infrared light while absorbing red light.
 
 This explains why the images have very little green in them, as the green channel is not being used to as it should be. Instead, it is being used to represent the infrared channel, which leads to an unnatural color balance in the image and affects the way the vegetation is detected. 
@@ -68,7 +68,7 @@ This explains why the images have very little green in them, as the green channe
 
 
         <h3 class="article-subtitle2">Change Detection</h3>
-        <p class="article-intro">
+        <p class="article-body">
             In this image, the major zone changes are shown in white.
         </p>
         <div class="image-container_TB">
@@ -77,7 +77,7 @@ This explains why the images have very little green in them, as the green channe
         </div>
 
         <h3 class="article-subtitle2">Prediction Vizualitation</h3>
-        <p class="article-intro">
+        <p class="article-body">
             The images at the right are the prediction of deforestation. 
             The most it approaches 0, the least vegetation it is in the zone.
         </p>
@@ -94,10 +94,10 @@ This explains why the images have very little green in them, as the green channe
         </div>
 
         <h3 class="article-subtitle2">User Prompt</h3>
-        <p class="article-intro">
+        <p class="article-body">
             The user provides the path to the image.
         </p>
-        <p class="article-intro">
+        <p class="article-body">
             The most approaches to 1, the most vegetation in the area, 0 is no vegetation and -1 are bodies of water or urbanization.
         </p>
 
@@ -148,7 +148,7 @@ This explains why the images have very little green in them, as the green channe
         </div>
 
         <h3 class="article-subtitle">Training Method</h3>
-        <p class="article-intro">
+        <p class="article-body">
             Down here it is the code for Training and the resultes obtained. 
         </p>
     

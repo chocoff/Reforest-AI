@@ -1,4 +1,4 @@
-#Notes: Before running anything, make sure to upload the .zip file with the whole data set.
+#Notes: This is meant to run on Google Colab. Before running anything, make sure to upload the .zip file with the whole data set.
 #If the name of the zip has changed, just change it as well in the zip_path variable.
 import zipfile
 import os
