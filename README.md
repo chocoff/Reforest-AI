@@ -55,7 +55,7 @@ This initiative aims to preserve Chaco’s ecosystems, reduce carbon emissions, 
 
 $$ \frac{Green - Red}{Green + Red + 1e-7} $$    
 
-Images are loaded, normalized, and stacked into an *8-channel tensor* (2xRGB images + 2x NDVI images). The model architecture employed implements a *Sequential CNN with three convolutional layers and a softmax output for multiclass classification. The final weights are saved in the following format: *reforestation_model.h5*.  
+Images are loaded, normalized, and stacked into an *8-channel tensor* (2xRGB images + 2x NDVI images). The model architecture employed implements a *Sequential CNN* with three convolutional layers and a softmax output for multiclass classification. The final weights are saved in the following format: *reforestation_model.h5*.  
 
 
 ---
