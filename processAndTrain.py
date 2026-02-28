@@ -9,19 +9,20 @@ from sklearn.utils import class_weight
 
 
 def computeNDVI(image1, image2):
-    # Assuming the third channel is the Red band (index 2 in RGB)
+    # Considering the third channel is the Red band (index 2 in RGB)
     RED1 = image1[:, :, 2]
     RED2 = image2[:, :, 2]
 
     # For this case, we will assume the green channel is being approximated as NIR
-    NIR1 = image1[:, :, 1]  # This is just a placeholder, ideally you'd have the NIR band
+    NIR1 = image1[:, :, 1]  # ideally you'd have the NIR band
     NIR2 = image2[:, :, 1]  # Same for image 2
 
     # Calculate NDVI for both images
-    ndvi1 = (NIR1 - RED1) / (NIR1 + RED1 + 1e-7)  # Adding small value to avoid division by zero
+    ndvi1 = (NIR1 - RED1) / (NIR1 + RED1 + 1e-7)  # a small value is added to avoid division by zero
     ndvi2 = (NIR2 - RED2) / (NIR2 + RED2 + 1e-7)
 
     return ndvi1, ndvi2
+
 
 def loadAndPreprocessImagesWithNDVI(df, imageDir='/content/images', imgSize=(224, 224)):
     images = []
