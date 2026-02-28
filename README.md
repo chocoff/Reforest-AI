@@ -6,10 +6,10 @@
 - [Phase 2](https://www.google.com/search?q=/phase2.html)  
 
 **README Navigation:** 
-- [Introduction](#introducton) 
-- [Project Goals](#project-goals)
+- [Introduction](#introduction) 
+- [Project Objectives](#project-objectives)
 - [Methodology](#methodology)
-- [Project Structure & Overview](#project-structure)
+- [Project Structure and Overview](#project-structure-and-overview)
 ---
 
 ## Introduction
@@ -20,7 +20,7 @@ Previous research made in deforestation monitoring has employed satellite images
 
 The effects of deforestation are far-reaching. It leads to the loss of biodiversity, with species becoming extinct and ecosystems being disrupted. Additionally, deforestation contributes significantly to climate change by releasing large amounts of carbon stored in trees into the atmosphere.
 
-## Project Goals
+## Project Objectives
 
 This initiative intends to provide:
 
@@ -44,16 +44,18 @@ The project focuses on identifying optimal locations for reforestation based on 
 
 This initiative aims to preserve Chaco’s ecosystems, reduce carbon emissions, and support informed decision-making in conservation, contributing to a sustainable balance between development and ecosystem preservation in fragile regions.
 
-## Project Structure & Overview.  
+## Project Structure and Overview
 
 [/images](./images/) and [/website](./website/) directories relate to the presentation of the project itself as a website. The [project report](./Forest_Monitoring_and_Carbon_Sequestration.pdf) is also included (in PDF format) as well asthe [dataset](./archive.zip) which can be found within a ZIP file.  
 
 ### Code related files  
 - *[dataIni](./dataIni.py)* handles the extraction, loading, as well as a visualization of the dataset.  
 - *[imageConversor](./imageConversor.py)* provides a Flask-based API for handling external image transformations.  
-- *[processAndTrain](./processAndTrain.py)* calculates the [NDVI](https://www.earthdata.nasa.gov/topics/normalized-difference-vegetation-index-ndvi) to highlight biomass. Since standard imagery often lacks a Near-Infrared (NIR) band, the code approximates NDVI using the green channel:  
-$$ \frac{Green - Red}{Green + Red + 1e-7} $$  
-Images are loaded, normalized, and stacked into an *8-channel tensor* (2xRGB images + 2x NDVI images). The model architecture employed implements a *Sequential CNN with three convolutional layers and a softmax output for multiclass classification. The final weights are saved in the following format: *reforestation_model.h5*.  
+- *[processAndTrain](./processAndTrain.py)* calculates the [NDVI](https://www.earthdata.nasa.gov/topics/normalized-difference-vegetation-index-ndvi) to highlight biomass. Since standard imagery often lacks a Near-Infrared (NIR) band, the code approximates NDVI using the green channel:
+
+$$ \frac{Green - Red}{Green + Red + 1e-7} $$    
+
+Images are loaded, normalized, and stacked into an *8-channel tensor* (2xRGB images + 2x NDVI images). The model architecture employed implements a *Sequential CNN* with three convolutional layers and a softmax output for multiclass classification. The final weights are saved in the following format: *reforestation_model.h5*.  
 
 
 ---
