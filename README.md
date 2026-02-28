@@ -9,7 +9,7 @@
 - [Introduction](#introducton) 
 - [Project Goals](#project-goals)
 - [Methodology](#methodology)
-- [Project Structure & Overview](#project-structure)
+- [Project Structure & Overview](#project-structure-&-overview)
 ---
 
 ## Introduction
@@ -44,7 +44,7 @@ The project focuses on identifying optimal locations for reforestation based on 
 
 This initiative aims to preserve Chaco’s ecosystems, reduce carbon emissions, and support informed decision-making in conservation, contributing to a sustainable balance between development and ecosystem preservation in fragile regions.
 
-## Project Structure & Overview.  
+## Project Structure & Overview
 
 [/images](./images/) and [/website](./website/) directories relate to the presentation of the project itself as a website. The [project report](./Forest_Monitoring_and_Carbon_Sequestration.pdf) is also included (in PDF format) as well asthe [dataset](./archive.zip) which can be found within a ZIP file.  
 
