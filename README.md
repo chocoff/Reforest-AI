@@ -51,8 +51,10 @@ This initiative aims to preserve Chaco’s ecosystems, reduce carbon emissions, 
 ### Code related files  
 - *[dataIni](./dataIni.py)* handles the extraction, loading, as well as a visualization of the dataset.  
 - *[imageConversor](./imageConversor.py)* provides a Flask-based API for handling external image transformations.  
-- *[processAndTrain](./processAndTrain.py)* calculates the [NDVI](https://www.earthdata.nasa.gov/topics/normalized-difference-vegetation-index-ndvi) to highlight biomass. Since standard imagery often lacks a Near-Infrared (NIR) band, the code approximates NDVI using the green channel:  
-$$ \frac{Green - Red}{Green + Red + 1e-7} $$  
+- *[processAndTrain](./processAndTrain.py)* calculates the [NDVI](https://www.earthdata.nasa.gov/topics/normalized-difference-vegetation-index-ndvi) to highlight biomass. Since standard imagery often lacks a Near-Infrared (NIR) band, the code approximates NDVI using the green channel:
+
+$$ \frac{Green - Red}{Green + Red + 1e-7} $$    
+
 Images are loaded, normalized, and stacked into an *8-channel tensor* (2xRGB images + 2x NDVI images). The model architecture employed implements a *Sequential CNN with three convolutional layers and a softmax output for multiclass classification. The final weights are saved in the following format: *reforestation_model.h5*.  
 
 
