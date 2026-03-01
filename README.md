@@ -1,9 +1,9 @@
 # Forestal Monitoring & Carbon Sequestration
 
-**Site Navigation:** 
-- [Introduction](https://www.google.com/search?q=/index.html) 
-- [Phase 1](https://www.google.com/search?q=/phase1.html) 
-- [Phase 2](https://www.google.com/search?q=/phase2.html)  
+**Visit the project's blog post:** 
+- [reforest-ai](chocoff.github.io/reforest-ai)  
+
+[PDF Report](./Forest_Monitoring_and_Carbon_Sequestration.pdf)
 
 **README Navigation:** 
 - [Introduction](#introduction) 
