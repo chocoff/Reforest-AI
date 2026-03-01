@@ -5,7 +5,7 @@
 ![Flask](https://img.shields.io/badge/Flask-3.1.3-black?logo=flask)  
 
 **Check the project's blog post and the PDF report:** 
-- [reforest-ai](chocoff.github.io/reforest-ai)  
+- [reforest-ai](https://chocoff.github.io/reforest-ai)  
 - [PDF Report](./Forest_Monitoring_and_Carbon_Sequestration.pdf)
 
 **README Navigation:** 
