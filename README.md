@@ -4,10 +4,9 @@
 ![Keras](https://img.shields.io/badge/Keras-3.13.2-red?logo=keras)
 ![Flask](https://img.shields.io/badge/Flask-3.1.3-black?logo=flask)  
 
-**Visit the project's blog post:** 
+**Check the project's blog post and the PDF report:** 
 - [reforest-ai](chocoff.github.io/reforest-ai)  
-
-[PDF Report](./Forest_Monitoring_and_Carbon_Sequestration.pdf)
+- [PDF Report](./Forest_Monitoring_and_Carbon_Sequestration.pdf)
 
 **README Navigation:** 
 - [Introduction](#introduction) 
