@@ -1,4 +1,8 @@
 # Forestal Monitoring & Carbon Sequestration
+![Python](https://img.shields.io/badge/Python-3.12.3%2B-blue?logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.20.0-orange?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-3.13.2-red?logo=keras)
+![Flask](https://img.shields.io/badge/Flask-3.1.3-black?logo=flask)  
 
 **Visit the project's blog post:** 
 - [reforest-ai](chocoff.github.io/reforest-ai)  
